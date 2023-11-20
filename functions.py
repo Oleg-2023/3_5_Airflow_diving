@@ -4,13 +4,14 @@ from airflow.hooks.postgres_hook import PostgresHook
 from airflow.models import Variable
 
 conn_id = Variable.get("conn_name")
+API_URL = Variable.get("RESOURCE_API_URL")
 SOURCE = Variable.get("CURRENCY_SOURCE")
 CURRENCY = Variable.get("BASE_CURRENCY")
 ACCESS_KEY = Variable.get("API_ACCESS_KEY")
 
 def get_url():
     # Запрос к Web API
-    url = 'http://api.exchangerate.host/live?access_key={}&'\
+    url = API_URL+ '/live?access_key={}&'\
           'source={}&currencies={}'.format(ACCESS_KEY, SOURCE, CURRENCY)
     return requests.get(url)
 
