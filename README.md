@@ -27,6 +27,7 @@ __connections:__
 
 В модуль __functions.py__ добавлено чтение соответствующих переменных:  
 conn_id = Variable.get("conn_name")  
+API_URL = Variable.get("RESOURCE_API_URL")
 SOURCE = Variable.get("CURRENCY_SOURCE")  
 CURRENCY = Variable.get("BASE_CURRENCY")  
 ACCESS_KEY = Variable.get("API_ACCESS_KEY")  
