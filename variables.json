@@ -1,0 +1,7 @@
+{
+    "API_ACCESS_KEY": "0f9490384184e1654447b78adc6589e9",
+    "BASE_CURRENCY": "RUB",
+    "CURRENCY_SOURCE": "BTC",
+    "RESOURCE_API_URL": "http://api.exchangerate.host",
+    "conn_name": "conn1"
+}

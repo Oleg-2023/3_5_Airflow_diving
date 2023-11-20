@@ -1,0 +1,12 @@
+{
+  "conn1": {
+    "conn_type": "postgres",
+    "description": "",
+    "login": "postgres",
+    "password": "password",
+    "host": "localhost",
+    "port": 5430,
+    "schema": "test",
+    "extra": "{}"
+  }
+}
