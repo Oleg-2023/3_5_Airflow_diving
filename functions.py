@@ -8,9 +8,6 @@ SOURCE = Variable.get("CURRENCY_SOURCE")
 CURRENCY = Variable.get("BASE_CURRENCY")
 ACCESS_KEY = Variable.get("API_ACCESS_KEY")
 
-SOURCE = 'BTC'
-CURRENCY = 'RUB'
-
 def get_url():
     # Запрос к Web API
     url = 'http://api.exchangerate.host/live?access_key={}&'\
